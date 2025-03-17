@@ -1,9 +1,13 @@
  programa {
+  inclua biblioteca Matematica --> mat
   funcao inicio() {
-   real n1,n2,n3
-   escreva("Digite tres números do menor para o maior:") 
-   leia(n1,n2,n3)
-   escreva("Os numeros em ordem decrescente é ",n3,(", "),n2,(" ,"),n1)
+    real co,ca,h
+     escreva(" Digite o valor do cateto oposto :")
+    leia(co)
+    escreva(" Digite o valor para o cateto adjacente: ")
+    leia(ca)
+    h = mat.raiz (mat.potencia(co,2) + mat.potencia(ca,2), 2)
+    escreva(" O valor da hipotenusa é :", mat.arredondar(h,2))
+
   }
 }
-
