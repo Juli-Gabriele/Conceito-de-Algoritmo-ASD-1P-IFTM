@@ -1,9 +1,12 @@
- programa {
+programa {
+  inclua biblioteca Matematica --> mat
   funcao inicio() {
-   real n1,n2,n3
-   escreva("Digite tres números do menor para o maior:") 
-   leia(n1,n2,n3)
-   escreva("Os numeros em ordem decrescente é ",n3,(", "),n2,(" ,"),n1)
+    real area,r,pi
+     escreva(" Digite o valor do raio do círculo :")
+    leia(r)
+    pi =3.1415
+    area= pi * mat.potencia(r,2)
+    escreva(" O valor da área é :", mat.arredondar(area ,2))
+
   }
 }
-
