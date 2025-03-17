@@ -1,7 +1,7 @@
 programa {
   inclua biblioteca Matematica --> mat
   funcao inicio() {
-    real c,m,juros,t,taxa 
+    real c,m,juros,t,taxa,mot 
      escreva("Qual o valor em reais aplicado:")
     leia(c)
     escreva("Qual a taxa de juros:")
@@ -9,7 +9,8 @@ programa {
     escreva("Por quantos meses foi aplicado :")
     leia(m)
     taxa = (t /100)
-    juros = (c * mat.potencia (1+ taxa, m) )
+    mot = (c * mat.potencia (1+ taxa, m) )
+    juros =( mot - c)
     escreva("Os juros cobrados foram :",  mat.arredondar (juros,2))
 
   }
