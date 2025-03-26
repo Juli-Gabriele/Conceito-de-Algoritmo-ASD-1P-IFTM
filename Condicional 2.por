@@ -1,4 +1,5 @@
 programa {
+// Faça um programa capaz de ler 2 números e imprimir quantos são pares.
   funcao inicio() {
     inteiro n1,n2,quantidade
     escreva(" Digite um  número : ")
