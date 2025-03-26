@@ -1,4 +1,5 @@
 programa {
+//   Faça um programa capaz de ler 5 números e imprimir o menor deles.
   funcao inicio() {
     real n1,n2,n3,n4,n5
     escreva("Digite o primeiro número : ")
