@@ -1,4 +1,5 @@
 programa {
+  // Faça um programa capaz de ler 3 números a, b e c, e imprimir se esse número tem 2, 1 ou nenhuma raiz do segundo grau.
   inclua biblioteca Matematica --> mat
   funcao inicio() {
    real a,b,c,delta
