@@ -1,4 +1,5 @@
 programa {
+// Faça um programa capaz de ler 3 números e imprimir o maior deles.
   funcao inicio() {
     real n1,n2,n3
     escreva("Digite tres numeros : ")
