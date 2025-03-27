@@ -23,7 +23,7 @@ programa {
             escreva("Essa equação não possui raízes reais")
         }
         senao se (delta > 0) {
-            x2 = (- b + mat.raiz(delta, 2)) / 2 * a
+            x1 = (- b + mat.raiz(delta, 2)) / 2 * a
             x2 = (- b - mat.raiz(delta, 2)) / 2 * a
             escreva("Essa equação possui duas raízes reais de valores: ", x1, ", ", x2)
         }
