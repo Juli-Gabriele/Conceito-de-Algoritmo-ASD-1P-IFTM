@@ -14,7 +14,7 @@ programa {
          escreva("O maior dos numeros digitados é : ", n3)
 
     }senao se(n1== n2 e n2 == n3){
-        escreva ("Os numeros são iguais:")
+        escreva ("Os numeros são iguais: ",n1)
     } 
   }
 }
