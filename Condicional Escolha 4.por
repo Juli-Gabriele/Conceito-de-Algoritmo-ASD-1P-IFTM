@@ -32,10 +32,10 @@ programa {
       escreva("Oito")
       pare
       caso 9:
-      escreva("Quatro")
+      escreva("Nove")
       pare
       caso 10:
-      escreva("Quatro")
+      escreva("Dez")
       pare
       caso contrario :
       escreva("Digite um numero valido")
