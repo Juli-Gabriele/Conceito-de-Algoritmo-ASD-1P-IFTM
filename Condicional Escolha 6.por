@@ -23,7 +23,7 @@ programa {
       escreva("Junho")
       pare
       caso 7:
-      escreva("Julhp")
+      escreva("Julho")
       pare
       caso 8:
       escreva("Agosto")
