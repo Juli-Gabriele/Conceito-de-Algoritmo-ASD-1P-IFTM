@@ -15,7 +15,10 @@ programa {
       caso  5:
       caso  6 : 
       escreva(" Vestuario","\n")
-       pare  
+       pare
+      caso 7:
+      escreva("Higiene pessoal")
+      pare
       caso  8: 
       caso  9: 
       caso  10: 
