@@ -10,21 +10,30 @@ programa {
     leia(hoF)
     escreva("Digite o  minuto final ")
     leia(minF)
-
-    se (minF < minI){
+    se (minF >= minI e hoF < hoI){
+      dur2 = minF - minI
+      dur1 = ( hoI - hoF)  
+    }
+    se (minF >= minI e hoF > hoI){
+      dur2 = minF - minI
+      dur1 = ( hoF - hoI) 
+    }
+    se (minF < minI e  hoF < hoI){
      dur2 = (( minF  + 60) - minI)
-     dur1 = ( hoF - hoI)
+     dur1 = ( hoI - hoF)  
      dur1 = dur1 - 1
    }
-   se (minF > minI){
-    dur1 = ( hoF - hoI)
-    dur2 = ( minF - minI)
 
+    se (minF < minI e  hoF > hoI){
+     dur2 = (( minF  + 60) - minI)
+     dur1 = ( hoF - hoI) 
+     dur1 = dur1 - 1
    }
-    se(hoF == hoI){
-      dur1 = 24
 
-    }
+    se(hoF == hoI e minF == minI){
+      dur1 = 24
+      dur2 = minF - minI
+  }
 
 
    escreva(" O JOGO DUROU ",dur1, " HORA(S) E ",dur2, " MINUTO(S)")
