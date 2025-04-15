@@ -9,10 +9,10 @@ programa {
     se(x ==0 e y== 0){
       escreva("ORIGEM \n")
     }
-     se ( x = 0) {
+     se ( x == 0) {
       escreva("Eixo x ")
     }
-    se ( y = 0) {
+    se ( y == 0) {
       escreva("Eixo y ")
     }
     se (x > 0 e y > 0){
