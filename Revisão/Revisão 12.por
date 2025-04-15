@@ -1,7 +1,7 @@
 programa {
   inclua biblioteca Matematica --> mat
   funcao inicio() {
-    inteiro minI,minF,hoI,hoF,dur1,dur2
+    inteiro minI,minF,hoI,hoF,durm1,durm2,minT,hoT,result
      escreva("Digite a hora inicial: ")
     leia(hoI)
     escreva("Digite o minuto inicial: ")
@@ -10,34 +10,30 @@ programa {
     leia(hoF)
     escreva("Digite o  minuto final ")
     leia(minF)
-    se (minF >= minI e hoF < hoI){
-      dur2 = minF - minI
-      dur1 = ( hoI - hoF)  
-    }
-    se (minF >= minI e hoF > hoI){
-      dur2 = minF - minI
-      dur1 = ( hoF - hoI) 
-    }
-    se (minF < minI e  hoF < hoI){
-     dur2 = (( minF  + 60) - minI)
-     dur1 = ( hoI - hoF)  
-     dur1 = dur1 - 1
-   }
+      durm1 = (hoI * 60) + minI
+      durm2 = (hoF * 60) + minF
+    se (durm1 < durm2){
+     result = durm2 - durm1
+     hoT = result / 60
+     minT = result % 60
 
-    se (minF < minI e  hoF > hoI){
-     dur2 = (( minF  + 60) - minI)
-     dur1 = ( hoF - hoI) 
-     dur1 = dur1 - 1
-   }
+    }
+    se (durm1 > durm2){
+     result = (1440 - durm1) + durm2
+     hoT = result / 60
+     minT = result % 60
 
-    se(hoF == hoI e minF == minI){
-      dur1 = 24
-      dur2 = minF - minI
+    }
+
+    se( durm1 == durm2){
+     hoT = 24
+     minT= 0
   }
 
 
-   escreva(" O JOGO DUROU ",dur1, " HORA(S) E ",dur2, " MINUTO(S)")
+   escreva(" O JOGO DUROU ", hoT, " HORA(S) E ", minT, " MINUTO(S)")
 
+    retorne
 
   }
 }
