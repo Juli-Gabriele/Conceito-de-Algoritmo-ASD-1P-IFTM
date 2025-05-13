@@ -16,6 +16,7 @@ programa {
     leia(minf)
     leia(a)
     leia(segf)
+
     inteiro dur1 = ((dia1 * 86400) +(hori * 3600) +(mini* 60) + segi)
     inteiro dur2 = ((dia2 * 86400) +(horf * 3600) +(minf* 60) + segf)
     inteiro cal = (dur2 - dur1)
@@ -25,8 +26,8 @@ programa {
     cal = cal % 1440
     inteiro m = cal / 60
     inteiro s = cal % 60
-    escreva(d,"\n")
-    escreva(h,": ",m," :",s)
+    escreva(d,"\n","dia (s) \n")
+    escreva(h,"hora (s) \n",m," minuto (s) \n",s ," segundo (s)")
     
   
   }
