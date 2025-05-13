@@ -10,7 +10,8 @@ programa {
        leia(r)
     }
     se (r == 's') escreva("Você apagou todos seus Dados")
-    se (r == 'n') escreva("prossiga")
+    se (r == 'n') escreva(" Prossiga")
+    retorne
    
   }
 }
