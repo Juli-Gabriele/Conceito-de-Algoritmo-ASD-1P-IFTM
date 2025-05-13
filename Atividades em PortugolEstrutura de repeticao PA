@@ -1,6 +1,7 @@
 programa {
   funcao inicio() {
-  // Calcular 
+  // Calcular um termo de uma pa dado o 
+ // primeiro termo e a razão
   real razao,a1,an,razao
   inteiro qtd
   escreva("digite o primeiro termo:")
